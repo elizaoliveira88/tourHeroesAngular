@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./h2.component.css']
 })
 export class H2Component implements OnInit {
-
+title = 'Top Heroes'
   constructor() { }
 
   ngOnInit(): void {
