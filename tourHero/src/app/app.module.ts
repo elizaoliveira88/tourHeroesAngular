@@ -7,6 +7,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { InputComponent } from './componets/atoms/input/input.component';
 import { AComponent } from './componets/atoms/a/a.component';
 import { HeaderComponent } from './componets/organisms/header/header.component';
 import { NavComponent } from './componets/molecules/nav/nav.component';
+import { BodyComponent } from './componets/tamplates/body/body.component';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { NavComponent } from './componets/molecules/nav/nav.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
+    MatGridListModule,
   ],
   declarations: [
     AppComponent,
@@ -56,6 +59,7 @@ import { NavComponent } from './componets/molecules/nav/nav.component';
     AComponent,
     HeaderComponent,
     NavComponent,
+    BodyComponent,
     
     
   ],
