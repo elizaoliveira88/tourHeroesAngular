@@ -23,7 +23,8 @@ import { H2Component } from './componets/atoms/h2/h2.component';
 import { LabelComponent } from './componets/atoms/label/label.component';
 import { InputComponent } from './componets/atoms/input/input.component';
 import { AComponent } from './componets/atoms/a/a.component';
-import { HeaderComponent } from './componets/molecules/header/header.component';
+import { HeaderComponent } from './componets/organisms/header/header.component';
+import { NavComponent } from './componets/molecules/nav/nav.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { HeaderComponent } from './componets/molecules/header/header.component';
     InputComponent,
     AComponent,
     HeaderComponent,
+    NavComponent,
     
     
   ],
