@@ -6,14 +6,15 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './componets/pages/heroes/heroes.component';
-import { HeroDetailComponent } from './componets/hero-detail/hero-detail.component';
-import { MessagesComponent } from './componets/messages/messages.component';
+import { HeroesComponent } from './componets/pages/heroes/heroes.component'; 
+import { HeroDetailComponent } from './componets/organisms/hero-detail/hero-detail.component';
+import { MessagesComponent } from './componets/molecules/messages/messages.component';
 import { DashboardComponent } from './componets/pages/dashboard/dashboard.component';
-import { HeroSearchComponent } from './componets/hero-search/hero-search.component';
+import { HeroSearchComponent } from './componets/organisms/hero-search/hero-search.component';
 import { ButtonComponent } from './componets/atoms/button/button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { H1Component } from './componets/atoms/h1/h1.component';
@@ -21,6 +22,8 @@ import { SearchComponent } from './componets/atoms/search/search.component';
 import { H2Component } from './componets/atoms/h2/h2.component';
 import { LabelComponent } from './componets/atoms/label/label.component';
 import { InputComponent } from './componets/atoms/input/input.component';
+import { AComponent } from './componets/atoms/a/a.component';
+import { HeaderComponent } from './componets/molecules/header/header.component';
 
 
 @NgModule({
@@ -34,6 +37,7 @@ import { InputComponent } from './componets/atoms/input/input.component';
     ),
     BrowserAnimationsModule,
     MatButtonModule,
+    MatToolbarModule,
   ],
   declarations: [
     AppComponent,
@@ -48,6 +52,9 @@ import { InputComponent } from './componets/atoms/input/input.component';
     H2Component,
     LabelComponent,
     InputComponent,
+    AComponent,
+    HeaderComponent,
+    
     
   ],
   bootstrap: [ AppComponent ]
