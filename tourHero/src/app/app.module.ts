@@ -22,12 +22,13 @@ import { H1Component } from './componets/atoms/h1/h1.component';
 import { SearchComponent } from './componets/atoms/search/search.component';
 import { H2Component } from './componets/atoms/h2/h2.component';
 import { LabelComponent } from './componets/atoms/label/label.component';
-import { InputComponent } from './componets/atoms/input/input.component';
 import { AComponent } from './componets/atoms/a/a.component';
-import { HeaderComponent } from './componets/molecules/header/header.component';
-import { NavComponent } from './componets/organisms/nav/nav.component';
+import { HeaderComponent } from './componets/organisms/header/header.component';
+import { NavComponent } from './componets/molecules/nav/nav.component';
 import { BodyComponent } from './componets/tamplates/body/body.component';
 import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.component';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.compon
     MatButtonModule,
     MatToolbarModule,
     MatGridListModule,
+    MatCardModule
   ],
   declarations: [
     AppComponent,
@@ -56,14 +58,11 @@ import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.compon
     SearchComponent,
     H2Component,
     LabelComponent,
-    InputComponent,
     AComponent,
     HeaderComponent,
     NavComponent,
     BodyComponent,
     TopHeroComponent,
-    
-    
   ],
   bootstrap: [ AppComponent ]
 })

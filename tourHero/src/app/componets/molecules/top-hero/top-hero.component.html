@@ -1,6 +1,7 @@
-<div class="heroes-menu">
- 
-  <app-a *ngFor="let hero of heroes"
+<mat-card>
+  <a *ngFor="let hero of heroes"
   routerLink="/detail/{{hero.id}}">
-  {{hero.name}}></app-a>
-</div>
+  {{hero.name}}</a>
+</mat-card>
+
+

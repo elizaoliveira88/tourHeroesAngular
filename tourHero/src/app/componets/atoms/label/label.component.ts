@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./label.component.css']
 })
 export class LabelComponent implements OnInit {
-
+title='Hero Search'
   constructor() { }
 
   ngOnInit(): void {
