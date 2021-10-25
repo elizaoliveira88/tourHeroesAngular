@@ -28,6 +28,7 @@ import { NavComponent } from './componets/molecules/nav/nav.component';
 import { BodyComponent } from './componets/tamplates/body/body.component';
 import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.component';
 import {MatCardModule} from '@angular/material/card';
+import { H3Component } from './componets/atoms/h3/h3.component';
 
 
 
@@ -63,6 +64,7 @@ import {MatCardModule} from '@angular/material/card';
     NavComponent,
     BodyComponent,
     TopHeroComponent,
+    H3Component,
   ],
   bootstrap: [ AppComponent ]
 })

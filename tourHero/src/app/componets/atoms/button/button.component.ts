@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-
+title="Clear Message"
   constructor() { }
 
   ngOnInit(): void {
