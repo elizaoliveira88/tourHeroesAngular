@@ -1,34 +1,32 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './services/in-memory-data.service';
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './componets/pages/heroes/heroes.component'; 
-import { HeroDetailComponent } from './componets/organisms/hero-detail/hero-detail.component';
-import { MessagesComponent } from './componets/molecules/messages/messages.component';
-import { DashboardComponent } from './componets/pages/dashboard/dashboard.component';
-import { HeroSearchComponent } from './componets/organisms/hero-search/hero-search.component';
-import { ButtonComponent } from './componets/atoms/button/button.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { H1Component } from './componets/atoms/h1/h1.component';
-import { SearchComponent } from './componets/atoms/search/search.component';
-import { H2Component } from './componets/atoms/h2/h2.component';
-import { LabelComponent } from './componets/atoms/label/label.component';
 import { AComponent } from './componets/atoms/a/a.component';
-import { HeaderComponent } from './componets/organisms/header/header.component';
-import { NavComponent } from './componets/molecules/nav/nav.component';
-import { BodyComponent } from './componets/tamplates/body/body.component';
-import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.component';
-import {MatCardModule} from '@angular/material/card';
+import { ButtonComponent } from './componets/atoms/button/button.component';
+import { H1Component } from './componets/atoms/h1/h1.component';
+import { H2Component } from './componets/atoms/h2/h2.component';
 import { H3Component } from './componets/atoms/h3/h3.component';
+import { LabelComponent } from './componets/atoms/label/label.component';
+import { SearchComponent } from './componets/atoms/search/search.component';
+import { MessagesComponent } from './componets/molecules/messages/messages.component';
+import { NavComponent } from './componets/molecules/nav/nav.component';
+import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.component';
+import { HeaderComponent } from './componets/organisms/header/header.component';
+import { HeroDetailComponent } from './componets/organisms/hero-detail/hero-detail.component';
+import { HeroSearchComponent } from './componets/organisms/hero-search/hero-search.component';
+import { DashboardComponent } from './componets/templates/dashboard/dashboard.component';
+import { HeroesComponent } from './componets/pages/heroes/heroes.component';
+import { InMemoryDataService } from './services/in-memory-data.service';
 
 
 
@@ -62,7 +60,6 @@ import { H3Component } from './componets/atoms/h3/h3.component';
     AComponent,
     HeaderComponent,
     NavComponent,
-    BodyComponent,
     TopHeroComponent,
     H3Component,
   ],

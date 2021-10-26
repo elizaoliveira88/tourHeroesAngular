@@ -1,18 +1,18 @@
 div{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: rgb(216, 85, 85);
   height: 30%;
+  margin: 0 2rem 0 2rem;
+  border-radius: 0.5rem;
 }
 
 .clear {
+  display: flex;
+  border-radius: 0.5rem;
   color: #333;
   background-color: rgb(236, 155, 155);
-  margin-bottom: 12px;
-  padding: 1rem;
-  border-radius: 4px;
-  font-size: 1rem;
 }
 .clear:hover {
   color: white;
