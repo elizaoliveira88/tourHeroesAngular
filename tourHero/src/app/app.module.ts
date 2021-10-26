@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,10 +25,10 @@ import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.compon
 import { HeaderComponent } from './componets/organisms/header/header.component';
 import { HeroDetailComponent } from './componets/organisms/hero-detail/hero-detail.component';
 import { HeroSearchComponent } from './componets/organisms/hero-search/hero-search.component';
-import { DashboardComponent } from './componets/templates/dashboard/dashboard.component';
 import { HeroesComponent } from './componets/pages/heroes/heroes.component';
+import { DashboardComponent } from './componets/templates/dashboard/dashboard.component';
 import { InMemoryDataService } from './services/in-memory-data.service';
-
+import { TableComponent } from './componets/molecules/table/table.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     MatButtonModule,
     MatToolbarModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   declarations: [
     AppComponent,
@@ -62,6 +64,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     NavComponent,
     TopHeroComponent,
     H3Component,
+    TableComponent,
   ],
   bootstrap: [ AppComponent ]
 })
