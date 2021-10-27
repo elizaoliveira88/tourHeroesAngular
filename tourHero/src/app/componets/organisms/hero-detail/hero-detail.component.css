@@ -1,20 +1,39 @@
+.hero{
+  font-size: large;
+  margin:2rem 0 15rem 1rem;
+ }
+h2{
+  margin-left: 1rem;
+}
+
 label {
   color: #435960;
   font-weight: bold;
+  margin-left: 1rem;
 }
 input {
   font-size: 1em;
   padding: .5rem;
+  border-radius: .5em;
+  margin-left: 1rem;
+  
+}
+span{
+  margin-left: 1rem;
 }
 button {
-  margin-top: 20px;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 4px;
+  margin: .5rem;
+  background-color: #ff4180;
+  padding: .5rem;
+  border-radius: .5em;
   font-size: 1rem;
+  
+}
+.back{
+  margin-left: 11rem;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #ffa2c1;
 }
 button:disabled {
   background-color: #eee;

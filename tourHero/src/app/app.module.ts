@@ -28,7 +28,7 @@ import { HeroSearchComponent } from './componets/organisms/hero-search/hero-sear
 import { HeroesComponent } from './componets/pages/heroes/heroes.component';
 import { DashboardComponent } from './componets/templates/dashboard/dashboard.component';
 import { InMemoryDataService } from './services/in-memory-data.service';
-import { TableComponent } from './componets/molecules/table/table.component';
+
 
 
 @NgModule({
@@ -64,7 +64,6 @@ import { TableComponent } from './componets/molecules/table/table.component';
     NavComponent,
     TopHeroComponent,
     H3Component,
-    TableComponent,
   ],
   bootstrap: [ AppComponent ]
 })
