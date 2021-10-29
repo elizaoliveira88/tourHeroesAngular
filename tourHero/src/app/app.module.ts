@@ -12,13 +12,9 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AComponent } from './componets/atoms/a/a.component';
-import { ButtonComponent } from './componets/atoms/button/button.component';
-import { H1Component } from './componets/atoms/h1/h1.component';
-import { H2Component } from './componets/atoms/h2/h2.component';
-import { H3Component } from './componets/atoms/h3/h3.component';
-import { LabelComponent } from './componets/atoms/label/label.component';
-import { SearchComponent } from './componets/atoms/search/search.component';
+import { ButtonsComponent } from './componets/atoms/buttons/buttons.component';
+import { InputComponent } from './componets/atoms/input/input.component';
+import { TitleComponent } from './componets/atoms/title/title.component';
 import { MessagesComponent } from './componets/molecules/messages/messages.component';
 import { NavComponent } from './componets/molecules/nav/nav.component';
 import { TopHeroComponent } from './componets/molecules/top-hero/top-hero.component';
@@ -28,6 +24,7 @@ import { HeroSearchComponent } from './componets/organisms/hero-search/hero-sear
 import { HeroesComponent } from './componets/pages/heroes/heroes.component';
 import { DashboardComponent } from './componets/templates/dashboard/dashboard.component';
 import { InMemoryDataService } from './services/in-memory-data.service';
+import { TextComponent } from './componets/atoms/text/text.component';
 
 
 
@@ -54,16 +51,13 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    ButtonComponent,
-    H1Component,
-    SearchComponent,
-    H2Component,
-    LabelComponent,
-    AComponent,
     HeaderComponent,
     NavComponent,
     TopHeroComponent,
-    H3Component,
+    TitleComponent,
+    ButtonsComponent,
+    InputComponent,
+    TextComponent,
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,13 +1,10 @@
-<strong>
-  <app-label></app-label>
-</strong>
+<app-title fontEcolor="h2" title="Hero Search" for="search-box"></app-title>
 <div id="search-component">
-  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <app-input inputStyle="inputDashboard" id="search-box" (handlerValue)="search($event)"></app-input>
   <ul class="search-result">
-    <li *ngFor="let hero of heroes$ | async" >
-      <a routerLink="/detail/{{hero.id}}">
-        {{hero.name}}
-      </a>
+    <li *ngFor="let hero of heroes$ | async">
+      <app-buttons buttonStyle="button-search" routerLink="/detail/{{hero.id}}" buttonDescription="{{hero.name}}">
+      </app-buttons>
     </li>
   </ul>
 </div>
