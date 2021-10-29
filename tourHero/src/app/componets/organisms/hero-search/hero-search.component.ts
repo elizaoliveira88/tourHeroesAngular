@@ -24,7 +24,6 @@ export class HeroSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("texto")
     this.heroes$ = this.searchTerms.pipe(
       debounceTime(300),
       distinctUntilChanged(),

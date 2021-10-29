@@ -13,7 +13,6 @@ export class InputComponent implements OnInit {
 
   handler(event:any) {
     this.handlerValue.emit(event)
-    console.log(this.handlerValue)
   }
   ngOnInit(): void {
   }
