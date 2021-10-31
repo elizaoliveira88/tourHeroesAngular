@@ -1,6 +1,9 @@
-<app-h3></app-h3>
+<app-title fontEcolor="h3" title="Messages"></app-title>
 <div *ngIf="messageService.messages.length">
-  <app-button class="clear"
-  (click)="messageService.clear()">Clear messages></app-button>
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+<app-buttons 
+  (click)="messageService.clear()" 
+  buttonStyle="button-clear" 
+  buttonDescription="Clear Messages">
+</app-buttons>
+<app-text fontEcolor="text" *ngFor='let message of messageService.messages' text="{{message}}"></app-text>
 </div>

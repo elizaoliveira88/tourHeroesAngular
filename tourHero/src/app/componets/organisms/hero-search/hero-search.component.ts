@@ -18,7 +18,8 @@ export class HeroSearchComponent implements OnInit {
   private searchTerms = new Subject<string>();
 
   constructor(private heroService: HeroService) { }
-  search(term: string): void {
+  search(term: any): void {
+    console.log( 'objeto',term)
     this.searchTerms.next(term);
   }
 
